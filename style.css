@@ -1,0 +1,336 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper{
+    background: url(https://assets.nflxext.com/ffe/siteui/vlv3/b321426e-35ae-4661-b899-d63bca17648a/af8dd31b-8026-4681-bcb0-6b421a8316e6/NG-en-20220926-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+.header{
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30% ;
+    color: white;
+    padding: 10px;
+}
+.signUp{
+    
+}
+
+.signUp > a{
+    text-decoration: none;
+    background-color: orange;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    /* position: fixed; */
+     
+}
+
+.logo{
+   /* position: fixed; */
+   /* top: 5px;
+   left: 5px; */
+}
+
+.logo > img{
+    width: 100px;
+}
+
+
+ul{
+    display: flex;
+    gap: 30px;
+}
+
+li{
+    list-style-type: none;
+    cursor: pointer;
+}
+li > a {
+    text-decoration: none;
+    color: white;
+}
+
+.container{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro{
+   
+    color: white;
+}
+
+.intro > h2{
+    font-weight: bolder;
+    font-size: 50px;
+    
+}
+
+.intro > h4{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.get-started{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-started > input {
+    height: 46px;
+    width: 400px;
+    /* border-radius: 3px; */
+}
+
+
+.get-started > button {
+    background-color: orange;
+    border: 1px solid orange;
+    color: white;
+    font-size: 20px;
+    /* border-radius: 3px; */
+    padding: 10px 20px;
+    cursor: pointer;
+    
+}
+
+.about{
+    /* background: url(https://media.istockphoto.com/photos/background-of-watching-movies-objects-on-the-left-with-reel-picture-id1034331322?k=20&m=1034331322&s=612x612&w=0&h=K_L9uB_ZWYrfftHGO-PwPEnw0BdZuyUcq42VrSitzj4=); */
+    /* background-size: cover; */
+    background-color: rgb(20, 19, 19);
+    height: 100vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-evenly;
+    /* padding-left: 20px; */
+   
+}
+.card{
+    /* margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.587);
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    padding: 10px 20px; */
+    /* column-gap: 40px;
+    width: 100%; */
+    
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-header > h2 > span {
+    color: orange;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(129, 125, 125, 0.587);
+    padding: 20px 0;
+}
+
+.section{
+    position: relative;
+    max-width: 1150px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem 2rem 2rem;
+  }
+ 
+  .content{
+    background-color: white;
+    column-gap: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+  } 
+  
+  .abt-img{
+    position: relative;
+  }
+  
+  .abt-img img{
+    max-width: 100%;
+    min-width: 500px;
+    border-radius: 10px;
+  }
+  
+  .card{
+    max-width: 600px;
+    
+  }
+
+  @media screen and (max-width: 1070px){
+    .header{
+        gap: 25% ;
+        padding: 10px;
+    }
+    .about{
+        padding-bottom: 5rem;
+    }
+    .about .content{
+        padding-top: 80px;
+        display: grid;
+        width: 100%;
+        row-gap: 20px;
+      }
+      .abt-img img{
+        min-width: 0;
+        width: 100%;
+      }
+    
+      .card{
+        min-width: 0;
+        width: 100%;
+      }
+  }
+
+  @media screen and (max-width: 730px){
+    /*=======Media query max-width 730px=======*/
+    .header{
+        gap: 20% ;
+        padding: 10px;
+    }
+    .about{
+      margin: 5rem 0 0 0;
+      /* padding-bottom: 0; */
+    }
+  }
+
+  @media screen and (max-width: 630px){
+    /*=======Media query max-width 730px=======*/
+  
+    .wrapper{
+        background-size: cover;
+        height: 50vh;
+       
+       
+        
+    }
+    .container{
+        height: 50vh;
+       
+    }
+    .intro{
+        display: flex;
+        align-items: center;
+        /* justify-content: center; */
+        flex-direction: column;
+    }
+    .header{
+        
+        gap: 5% ;
+        padding: 50px;
+    }
+
+    .signUp{
+        
+    }
+    
+    .signUp > a{
+       font-size: 10px;
+        padding: 5px;
+        border-radius: 3px;
+        /* position: fixed; */
+         
+    }
+    
+    .logo{
+       /* position: fixed; */
+       /* top: 5px;
+       left: 5px; */
+    }
+    
+    .logo > img{
+        width: 50px;
+    }
+    
+    
+    ul{
+        display: flex;
+        gap: 30px;
+    }
+    
+    
+    .intro > h2{
+        font-weight: bolder;
+        font-size: 20px;
+        
+    }
+    
+    .intro > h4{
+        font-weight: bold;
+        font-size: 10px;
+        margin-bottom: 20px;
+    }
+    .intro > h5 {
+        max-width: fit-content;
+    }
+    .get-started{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .get-started > input {
+        height: 23px;
+        width: 200px;
+        margin-bottom: 10px;
+        /* border-radius: 3px; */
+    }
+    
+    
+    .get-started > button {
+        background-color: orange;
+        border: 1px solid orange;
+        color: white;
+        font-size: 10px;
+        /* border-radius: 3px; */
+        padding: 5px 10px;
+        cursor: pointer;
+        margin-bottom: 70px;
+        
+    }
+
+    .about{
+      margin: 2rem 0 0 0;
+      
+      /* padding-bottom: 0; */
+    }
+    .content{
+        margin-left: auto;
+       margin-right: auto;
+    }
+  }
